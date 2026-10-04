@@ -1,0 +1,1308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERP Implementation &amp; Rollout — Corporate Solutions</title>
+<meta name="description" content="ERP selection, implementation and staged rollout across finance, supply chain, manufacturing and HR — with Oracle, open source and Microsoft Dynamics 365 tracks evaluated.">
+<meta name="theme-color" content="#ea580c">
+<link rel="icon" type="image/png" sizes="128x128" href="../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/project.css">
+<link rel="stylesheet" href="../assets/css/mockups.css">
+</head>
+<body data-page="erp" style="--accent:#ea580c;--accent-2:#f97316;--accent-soft:rgba(234,88,12,.10);--accent-line:rgba(234,88,12,.30)">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Corporate Solutions home">
+      <img class="brand__logo" src="../assets/img/logo.png" alt="Corporate Solutions" width="640" height="202" decoding="async">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__link" data-nav="home" href="../index.html">Home</a>
+      <div class="nav__item">
+        <button class="nav__toggle" type="button" aria-haspopup="true">Solutions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a class="dropdown__link" data-nav="hr" href="hr-system.html">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <span><strong>HR Management System</strong><span>Core HR, payroll, talent &amp; self-service</span></span>
+          </a>
+          <a class="dropdown__link" data-nav="hospital" href="hospital-management-system.html">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v4M14 8h-4"/><path d="M2 12h3l2-5 3 10 2-6 2 3h5"/><path d="M20 8v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5"/></svg></span>
+            <span><strong>Hospital Management</strong><span>EMR, OPD/IPD, lab, pharmacy &amp; billing</span></span>
+          </a>
+          <a class="dropdown__link" data-nav="erp" href="erp-implementation.html">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <span><strong>ERP Implementation</strong><span>Oracle · Open Source · MS Dynamics 365</span></span>
+          </a>
+          <a class="dropdown__link" data-nav="monitoring" href="server-network-monitoring.html">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg></span>
+            <span><strong>Server &amp; Network Monitoring</strong><span>Metrics, topology, alerts &amp; SLA insight</span></span>
+          </a>
+          <a class="dropdown__link" data-nav="conference" href="live-conference-solutions.html">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></span>
+            <span><strong>Live Conference Solutions</strong><span>WebRTC webinars, meetings &amp; streaming</span></span>
+          </a>
+          <a class="dropdown__link" href="../index.html#services">
+            <span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
+            <span><strong>Services &amp; Capabilities</strong><span>Consulting, build, integrate &amp; support</span></span>
+          </a>
+        </div>
+      </div>
+      <a class="nav__link" href="../index.html#process">Process</a>
+      <a class="nav__link" href="../index.html#technologies">Technologies</a>
+      <a class="nav__link" href="../index.html#testimonials">Clients</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm" href="#contact">Start a project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="burger" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__group">
+    <div class="mobile-nav__label">Main</div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#process">Our process</a>
+    <a href="../index.html#technologies">Technologies</a>
+    <a href="../index.html#testimonials">Clients</a>
+  </div>
+  <div class="mobile-nav__group">
+    <div class="mobile-nav__label">Solutions</div>
+    <a href="hr-system.html"><span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>HR Management System</a>
+    <a href="hospital-management-system.html"><span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 6v4M14 8h-4"/><path d="M2 12h3l2-5 3 10 2-6 2 3h5"/></svg></span>Hospital Management</a>
+    <a data-nav="erp" href="erp-implementation.html"><span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>ERP Implementation</a>
+    <a href="server-network-monitoring.html"><span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/></svg></span>Server &amp; Network Monitoring</a>
+    <a href="live-conference-solutions.html"><span class="dropdown__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></span>Live Conference Solutions</a>
+  </div>
+  <a class="btn btn--primary" href="#contact">Start a project</a>
+</div>
+
+<main id="main" class="page-enter">
+
+<!-- ============ HERO ============ -->
+<section class="p-hero">
+  <div class="p-hero__mesh"></div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      <a href="../index.html#work">Projects</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      <span aria-current="page">ERP Implementation &amp; Rollout</span>
+    </nav>
+
+    <div class="p-hero__inner">
+      <div class="p-hero__copy">
+        <span class="badge badge--dot reveal">Enterprise Resource Planning</span>
+        <h1 class="reveal" style="--d:.06s">ERP Implementation &amp; Rollout</h1>
+        <p class="lede reveal" style="--d:.12s">
+          A manufacturing &amp; distribution group unified finance, supply chain, manufacturing
+          and HR on a single ERP — selecting the platform from three evaluated tracks
+          (Oracle, open source and Microsoft Dynamics&nbsp;365) and rolling it out across four
+          business units in fourteen months.
+        </p>
+
+        <div class="p-hero__actions reveal" style="--d:.18s">
+          <a class="btn btn--accent btn--lg" href="#workflow">
+            See delivery workflow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#platforms">Compare platforms</a>
+        </div>
+
+        <div class="p-hero__metrics" data-stagger=".07">
+          <div class="p-hero__metric reveal"><b>3</b><span>Platform tracks</span></div>
+          <div class="p-hero__metric reveal"><b>6</b><span>Delivery phases</span></div>
+          <div class="p-hero__metric reveal"><b>-38%</b><span>Month-end close time</span></div>
+          <div class="p-hero__metric reveal"><b>4</b><span>Business units</span></div>
+        </div>
+      </div>
+
+      <div class="p-hero__visual reveal-scale" style="--d:.22s">
+        <div class="mock">
+          <div class="mock__bar">
+            <span class="mock__dots"><i></i><i></i><i></i></span>
+            <span class="mock__url">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              erp.corporatesolutions.io/command-center
+            </span>
+          </div>
+          <div class="mock__app mock__app--wide">
+            <aside class="mock__side">
+              <span class="m-logo"><i></i><b>ATLAS ERP</b></span>
+              <span class="m-nav is-on"><i></i><span>Command Center</span></span>
+              <span class="m-nav"><i></i><span>Finance</span></span>
+              <span class="m-nav"><i></i><span>Supply Chain</span></span>
+              <span class="m-nav"><i></i><span>Manufacturing</span></span>
+              <span class="m-nav"><i></i><span>Procurement</span></span>
+              <span class="m-nav"><i></i><span>HR</span></span>
+              <span class="m-nav"><i></i><span>Reports</span></span>
+            </aside>
+            <div class="mock__main">
+              <div class="m-top">
+                <div><h6>Command Center</h6><p>Group view · Q4 2026 · 4 entities</p></div>
+                <div class="m-top__acts">
+                  <span class="m-btn m-btn--ghost">Filters</span>
+                  <span class="m-btn">Run close</span>
+                  <span class="m-avatar"></span>
+                </div>
+              </div>
+
+              <div class="m-kpis">
+                <div class="m-kpi"><span>Revenue YTD</span><b>$248.6M</b><em>▲ 6.4%</em></div>
+                <div class="m-kpi"><span>Inventory turns</span><b>7.8x</b><em>▲ 0.6</em></div>
+                <div class="m-kpi"><span>On-time delivery</span><b>96.2%</b><em>▲ 2.1%</em></div>
+                <div class="m-kpi"><span>Open POs</span><b>412</b><em class="down">▼ 8%</em></div>
+              </div>
+
+              <div class="m-row-2">
+                <div class="m-panel">
+                  <div class="m-panel__h"><b>Rollout plan</b><span>14 months · 6 phases</span></div>
+                  <div class="m-gantt">
+                    <div class="m-gi"><span>Discover</span><i><b style="--s:0%;--w:14%"></b></i></div>
+                    <div class="m-gi"><span>Design</span><i><b style="--s:12%;--w:18%"></b></i></div>
+                    <div class="m-gi"><span>Build</span><i><b style="--s:28%;--w:34%"></b></i></div>
+                    <div class="m-gi"><span>Migrate</span><i><b style="--s:58%;--w:22%"></b></i></div>
+                    <div class="m-gi"><span>Hypercare</span><i><b style="--s:76%;--w:22%"></b></i></div>
+                  </div>
+                </div>
+                <div class="m-panel">
+                  <div class="m-panel__h"><b>Close status</b><span>Oct period</span></div>
+                  <div class="m-donut-row">
+                    <div class="m-donut" style="--p:78%"><b>78%</b></div>
+                    <div class="m-legend">
+                      <div><i></i> Posted · 1,842</div>
+                      <div><i></i> In review · 316</div>
+                      <div><i></i> Not started · 198</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="m-panel">
+                <div class="m-panel__h"><b>Rollout waves</b><span>4 business units</span></div>
+                <div class="m-table">
+                  <div class="th" style="grid-template-columns:1.5fr 1.1fr .8fr .8fr"><span>Business unit</span><span>Scope</span><span>Go-live</span><span>Status</span></div>
+                  <div class="tr" style="grid-template-columns:1.5fr 1.1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Atlas Manufacturing</span><span class="cell muted">Finance &amp; SCM</span><span class="cell muted">Feb 2026</span><span class="cell"><i class="pill">Live</i></span></div>
+                  <div class="tr" style="grid-template-columns:1.5fr 1.1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Northline Distribution</span><span class="cell muted">Procurement</span><span class="cell muted">Mar 2026</span><span class="cell"><i class="pill">Live</i></span></div>
+                  <div class="tr" style="grid-template-columns:1.5fr 1.1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Delta Components</span><span class="cell muted">MRP &amp; production</span><span class="cell muted">Apr 2026</span><span class="cell"><i class="pill info">Cutover</i></span></div>
+                  <div class="tr" style="grid-template-columns:1.5fr 1.1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Harbor Trading</span><span class="cell muted">Consolidation</span><span class="cell muted">May 2026</span><span class="cell"><i class="pill warn">Pilot</i></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUBNAV ============ -->
+<nav class="subnav" aria-label="On this page">
+  <div class="wrap subnav__inner">
+    <a href="#overview" class="is-active">Overview</a>
+    <a href="#information">Project info</a>
+    <a href="#features">Features</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#platforms">Platforms</a>
+    <a href="#screens">Screens</a>
+    <a href="#technology">Technology</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#results">Results</a>
+  </div>
+</nav>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="p-section" id="overview">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="overline reveal">The brief</div>
+        <h2 class="reveal" style="--d:.05s">Four business units, one definition of a number</h2>
+        <p class="lede reveal mt-16" style="--d:.1s">
+          A manufacturing and distribution group was running four ERPs, two of them
+          home-grown, across a plant network, a wholesale arm, a components business and a
+          trading company. Consolidation took eleven working days, planners could not trust
+          inventory positions, and each unit negotiated its own purchase orders with the
+          same suppliers.
+        </p>
+        <p class="reveal mt-16" style="--d:.16s">
+          We ran the platform selection across three tracks — Oracle, open source and
+          Microsoft Dynamics&nbsp;365 — then delivered the chosen platform end to end: fit-gap
+          workshops, conference room pilots, configuration, master-data cleansing, historical
+          migration, integration to the MES and banking estate, a staged cutover and eight
+          weeks of hypercare. Finance, supply chain, manufacturing and HR now close on the
+          same calendar.
+        </p>
+
+        <div class="note reveal mt-24" style="--d:.2s">
+          <b>Delivery model:</b> selection and design in a fixed-fee first phase, followed by
+          a time-and-materials build across six phases. Go-live was staged business unit by
+          business unit so that each wave could be stabilised before the next began.
+        </div>
+      </div>
+
+      <div class="split__sticky">
+        <dl class="spec reveal" id="information">
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>Industry</dt>
+            <dd>Manufacturing &amp; distribution</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Engagement</dt>
+            <dd>ERP selection, implementation &amp; rollout</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Duration</dt>
+            <dd>14 months · 3 phases</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>Team</dt>
+            <dd>1 program director · 3 functional leads · 2 data migration · 9 consultants · 1 PMO</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg>Our role</dt>
+            <dd>Fit-gap, configuration, data migration, integration, cutover, hypercare</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>Delivery</dt>
+            <dd>Conference room pilot → staged cutover → 8-week hypercare</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Platforms evaluated</dt>
+            <dd>Oracle, open source, Microsoft Dynamics 365</dd>
+          </div>
+          <div class="spec__row">
+            <dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>Status</dt>
+            <dd>Live in 4 business units since Feb 2026</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="p-section p-section--alt" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="overline reveal">Capabilities</div>
+      <h2 class="reveal" style="--d:.05s">One ledger, one plan, one set of numbers</h2>
+      <p class="lede reveal" style="--d:.1s">Nine functional areas configured to group policy — shared across entities, localised where statute requires it.</p>
+    </div>
+
+    <div class="grid features" data-stagger=".06">
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span>
+        <h4>Financial management &amp; GL</h4>
+        <p>Multi-ledger general ledger, AP, AR, fixed assets, cash management and a five-step close checklist per entity.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg></span>
+        <h4>Procurement &amp; vendor management</h4>
+        <p>Requisition-to-pay with approval thresholds, contract pricing, supplier scorecards and three-way matching.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8 12 3l9 5v8l-9 5-9-5Z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span>
+        <h4>Inventory &amp; warehouse</h4>
+        <p>Real-time stock positions by bin and lot, cycle counts, replenishment min/max and landed-cost valuation.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a4 4 0 0 1-5-5Z"/><path d="m17 3 4 4"/></svg></span>
+        <h4>Manufacturing &amp; production planning</h4>
+        <p>Bills of material, routings, MRP runs, capacity levelling and shop-floor reporting fed back from the MES.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></span>
+        <h4>Sales &amp; distribution</h4>
+        <p>Quotation to cash with price lists, credit limits, pick-pack-ship and EDI acknowledgement for key accounts.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>
+        <h4>Project accounting</h4>
+        <p>Capital projects and maintenance work orders with budget, commitment, actuals and WIP revaluation.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        <h4>Multi-entity consolidation</h4>
+        <p>Four legal entities, intercompany elimination, minority interest and currency translation in one close.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h4>Role-based security &amp; audit</h4>
+        <p>Segregation-of-duties rules, maker-checker posting, field-level permissions and an immutable change log.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15h6"/></svg></span>
+        <h4>Analytics &amp; board reporting</h4>
+        <p>Group P&amp;L, working-capital and OTIF dashboards on a conformed model, refreshed hourly into Power BI.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKFLOW ============ -->
+<section class="p-section" id="workflow">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__sticky">
+        <div class="overline reveal">Workflow</div>
+        <h2 class="reveal" style="--d:.05s">Six phases from selection to steady state</h2>
+        <p class="lede reveal mt-16" style="--d:.1s">
+          Every phase has an exit gate with named evidence. Nothing moves forward because a
+          date is approaching — it moves forward because the gate has been signed off by the
+          business owner and the PMO.
+        </p>
+        <div class="check-list reveal mt-24" style="--d:.16s">
+          <li>Fit-gap decisions recorded in a signed design authority log</li>
+          <li>Data quality scored weekly against a 14-point cleansing rule set</li>
+          <li>Cutover rehearsed twice — one technical, one business — before go-live</li>
+          <li>Hypercare measured on ticket volume, not on elapsed calendar time</li>
+        </div>
+      </div>
+
+      <div class="flow" data-stagger=".07">
+        <div class="flow__item reveal">
+          <span class="flow__num">01</span>
+          <div class="flow__body">
+            <h4>Discover &amp; fit-gap</h4>
+            <p>Two weeks per function: finance, supply chain, manufacturing and HR walk us through their real transactions. Each process is mapped as standard-fit, configured or custom, then priced and prioritised against the three platform tracks.</p>
+            <div class="flow__tags"><span class="tag">Process maps</span><span class="tag">Fit-gap log</span><span class="tag">Platform scoring</span></div>
+          </div>
+        </div>
+        <div class="flow__item reveal">
+          <span class="flow__num">02</span>
+          <div class="flow__body">
+            <h4>Design &amp; conference room pilot</h4>
+            <p>Chart of accounts, cost centres, item master and approval matrices are designed, then proved in the room with the people who will use them. Scenarios run end to end — order to cash, procure to pay, plan to produce — until they hold without a workaround.</p>
+            <div class="flow__tags"><span class="tag">CRP scripts</span><span class="tag">COA design</span><span class="tag">Sign-off</span></div>
+          </div>
+        </div>
+        <div class="flow__item reveal">
+          <span class="flow__num">03</span>
+          <div class="flow__body">
+            <h4>Build &amp; configure</h4>
+            <p>Configuration is version-controlled and promoted through sandbox, test and pre-production. Extensions are kept out of the upgrade path wherever possible; anything custom gets an owner, a test and a documented reason.</p>
+            <div class="flow__tags"><span class="tag">Sandbox → pre-prod</span><span class="tag">Extensions</span><span class="tag">SIT</span></div>
+          </div>
+        </div>
+        <div class="flow__item reveal">
+          <span class="flow__num">04</span>
+          <div class="flow__body">
+            <h4>Data migration &amp; validation</h4>
+            <p>Open balances, master data, open POs, WIP and three years of history are extracted, reconciled and loaded. Every load is signed off against control totals in both the source and the target before the next object is allowed to run.</p>
+            <div class="flow__tags"><span class="tag">Control totals</span><span class="tag">Mock loads ×3</span><span class="tag">Reconciliation</span></div>
+          </div>
+        </div>
+        <div class="flow__item reveal">
+          <span class="flow__num">05</span>
+          <div class="flow__body">
+            <h4>Cutover &amp; go-live</h4>
+            <p>A minute-by-minute cutover runbook covers freeze windows, final delta loads, bank file verification and rollback triggers. Business units go live in waves so the support team learns on the first wave before the second arrives.</p>
+            <div class="flow__tags"><span class="tag">Runbook</span><span class="tag">Freeze window</span><span class="tag">Staged waves</span></div>
+          </div>
+        </div>
+        <div class="flow__item reveal">
+          <span class="flow__num">06</span>
+          <div class="flow__body">
+            <h4>Hypercare &amp; continuous improvement</h4>
+            <p>Eight weeks of on-site and remote hypercare with a single triage queue, daily stand-ups and a visible burn-down. What remains is converted into a backlog with a quarterly release cadence and a documented upgrade path.</p>
+            <div class="flow__tags"><span class="tag">Triage queue</span><span class="tag">Burn-down</span><span class="tag">Release train</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATFORMS / TABS ============ -->
+<section class="p-section p-section--alt" id="platforms">
+  <div class="wrap" data-tabs>
+    <div class="section-head">
+      <div class="overline reveal">Platform tracks</div>
+      <h2 class="reveal" style="--d:.05s">Three routes to the same outcome</h2>
+      <p class="lede reveal" style="--d:.1s">
+        We evaluated three tracks against the same fit-gap catalogue and the same five-year
+        cost model, so the recommendation was never a matter of taste.
+      </p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Platform tracks">
+      <button class="tab is-active" role="tab" data-tab="erp-oracle" aria-selected="true" aria-controls="erp-oracle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+        Oracle
+      </button>
+      <button class="tab" role="tab" data-tab="erp-open" aria-selected="false" tabindex="-1" aria-controls="erp-open">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18 22 12l-6-6"/><path d="M8 6 2 12l6 6"/><path d="m14 4-4 16"/></svg>
+        Open source
+      </button>
+      <button class="tab" role="tab" data-tab="erp-d365" aria-selected="false" tabindex="-1" aria-controls="erp-d365">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z"/></svg>
+        MS Dynamics 365
+      </button>
+    </div>
+
+    <!-- Oracle -->
+    <div class="tab-panel is-active" id="erp-oracle" role="tabpanel">
+      <div class="split">
+        <div>
+          <div class="overline reveal">Track 01</div>
+          <h3 class="reveal" style="--d:.04s">Oracle Fusion Cloud ERP</h3>
+          <p class="lede reveal mt-16" style="--d:.08s">
+            The heavyweight track. We specify Oracle when multi-GAAP consolidation,
+            sophisticated revenue recognition and a long, funded product roadmap matter more
+            than speed or licence cost.
+          </p>
+          <ul class="check-list reveal mt-24" style="--d:.12s">
+            <li>Ideal fit: multi-entity, multi-country groups with complex consolidation and statutory reporting.</li>
+            <li>Typical modules: GL, AP, AR, cash management, procurement, inventory, manufacturing and HCM add-ons.</li>
+            <li>Licensing model: per-user subscription bundled by module tier, with annual support uplift.</li>
+            <li>Implementation notes: configuration-led with minimal code; Visual Builder for extensions and OData for integration.</li>
+            <li>When we recommend it: regulated groups already on Oracle technology where audit depth outweighs time-to-value.</li>
+          </ul>
+        </div>
+
+        <div class="compare reveal" style="--d:.14s">
+          <div class="compare__scroll">
+            <table>
+              <thead>
+                <tr><th scope="col">Capability</th><th scope="col">Track fit</th><th scope="col">Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Multi-entity consolidation</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Native ledger consolidation across 40+ currencies and ledgers</td>
+                </tr>
+                <tr>
+                  <th scope="row">Localisation &amp; statutory tax</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Country tax packs maintained by Oracle on a published cadence</td>
+                </tr>
+                <tr>
+                  <th scope="row">Manufacturing &amp; MRP depth</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Discrete, process and mixed-mode planning with constraint support</td>
+                </tr>
+                <tr>
+                  <th scope="row">Low-code extension tooling</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Visual Builder and BI Publisher keep custom work upgrade-safe</td>
+                </tr>
+                <tr>
+                  <th scope="row">Licence cost predictability</th>
+                  <td>Tiered subscription</td>
+                  <td>Predictable per user, but rises with module and role count</td>
+                </tr>
+                <tr>
+                  <th scope="row">Self-hosted deployment</th>
+                  <td>Oracle EBS only</td>
+                  <td>Fusion is SaaS; on-premise requires the E-Business Suite track</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open source -->
+    <div class="tab-panel" id="erp-open" role="tabpanel" hidden>
+      <div class="split">
+        <div>
+          <div class="overline reveal">Track 02</div>
+          <h3 class="reveal" style="--d:.04s">Open source (Odoo 17)</h3>
+          <p class="lede reveal mt-16" style="--d:.08s">
+            The value track. One application server, every module on the same object model,
+            source code in your own repository and hosting wherever your compliance team is
+            comfortable placing it.
+          </p>
+          <ul class="check-list reveal mt-24" style="--d:.12s">
+            <li>Ideal fit: cost-sensitive mid-market groups wanting fast time-to-value and full source access.</li>
+            <li>Typical modules: Sales, inventory, MRP, purchase, accounting, projects and HR on a single ORM.</li>
+            <li>Licensing model: Community is free; Enterprise is a per-user subscription with hosting freedom.</li>
+            <li>Implementation notes: app-level configuration, Studio customisation, ORM/XML extensions and versioned upgrades.</li>
+            <li>When we recommend it: organisations with in-house engineering appetite to own upgrades long term.</li>
+          </ul>
+        </div>
+
+        <div class="compare reveal" style="--d:.14s">
+          <div class="compare__scroll">
+            <table>
+              <thead>
+                <tr><th scope="col">Capability</th><th scope="col">Track fit</th><th scope="col">Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Time to first go-live</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Fastest of the three — 8 to 12 weeks for a first entity</td>
+                </tr>
+                <tr>
+                  <th scope="row">Source code access</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Full repository, your fork, your release pipeline</td>
+                </tr>
+                <tr>
+                  <th scope="row">Self-hosted / private cloud</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Any Linux host, Docker or Kubernetes, no vendor lock-in</td>
+                </tr>
+                <tr>
+                  <th scope="row">Third-party app ecosystem</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Thousands of community and partner modules</td>
+                </tr>
+                <tr>
+                  <th scope="row">Localised invoicing (MENA / EU)</th>
+                  <td>Community packs</td>
+                  <td>Quality varies by country — validated before commitment</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep multi-GAAP consolidation</th>
+                  <td>Add-on or group reporting</td>
+                  <td>Solid for four entities; thinner than Oracle at group scale</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamics 365 -->
+    <div class="tab-panel" id="erp-d365" role="tabpanel" hidden>
+      <div class="split">
+        <div>
+          <div class="overline reveal">Track 03</div>
+          <h3 class="reveal" style="--d:.04s">Microsoft Dynamics 365</h3>
+          <p class="lede reveal mt-16" style="--d:.08s">
+            The standardisation track. ERP that lives inside the same identity, reporting and
+            support boundary as the rest of the Microsoft estate — attractive when IT is
+            already all-in on Azure.
+          </p>
+          <ul class="check-list reveal mt-24" style="--d:.12s">
+            <li>Ideal fit: Microsoft-standardised estates that want ERP inside the M365 and Azure identity boundary.</li>
+            <li>Typical modules: Finance, Business Central, Supply Chain Management, Sales, Field Service and HR.</li>
+            <li>Licensing model: per-user plan or per-app licensing through an existing Microsoft agreement.</li>
+            <li>Implementation notes: dual-write and dataflows for integration, Power Platform for extensions, AL for ALM.</li>
+            <li>When we recommend it: organisations standardised on Azure with Power BI as the default reporting layer.</li>
+          </ul>
+        </div>
+
+        <div class="compare reveal" style="--d:.14s">
+          <div class="compare__scroll">
+            <table>
+              <thead>
+                <tr><th scope="col">Capability</th><th scope="col">Track fit</th><th scope="col">Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Fit with Microsoft 365</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Entra ID sign-off, Teams approvals, Outlook document handling</td>
+                </tr>
+                <tr>
+                  <th scope="row">Native Power BI reporting</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Published data entities remove most of the extract work</td>
+                </tr>
+                <tr>
+                  <th scope="row">Business Central for SME units</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Lighter footprint for smaller trading entities</td>
+                </tr>
+                <tr>
+                  <th scope="row">Partner ecosystem</th>
+                  <td><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yes</span></td>
+                  <td>Broad regional coverage with certified implementation partners</td>
+                </tr>
+                <tr>
+                  <th scope="row">Global statutory localisation</th>
+                  <td>150+ countries</td>
+                  <td>Strong coverage; verify MENA e-invoicing roadmaps per country</td>
+                </tr>
+                <tr>
+                  <th scope="row">Hybrid on-premise option</th>
+                  <td>Business Central only</td>
+                  <td>Finance &amp; Supply Chain Management is cloud-first</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="reveal" style="margin:56px 0 20px">Platform comparison at a glance</h3>
+    <div class="compare reveal" style="--d:.06s">
+      <div class="compare__scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Consideration</th>
+              <th scope="col">Oracle Fusion</th>
+              <th scope="col">Open source (Odoo)</th>
+              <th scope="col">MS Dynamics 365</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Best suited to</th>
+              <td>Regulated multi-country groups</td>
+              <td>Cost-sensitive mid-market groups</td>
+              <td>Microsoft-standardised estates</td>
+            </tr>
+            <tr>
+              <th scope="row">Time to first go-live</th>
+              <td>10–14 months</td>
+              <td>8–12 weeks per entity</td>
+              <td>5–9 months</td>
+            </tr>
+            <tr>
+              <th scope="row">Licensing model</th>
+              <td>Per-user subscription by tier</td>
+              <td>Free core or per-user Enterprise</td>
+              <td>Per-user plan / per-app</td>
+            </tr>
+            <tr>
+              <th scope="row">Customisation approach</th>
+              <td>Config-first, PaaS extensions</td>
+              <td>Modules, Studio, ORM extensions</td>
+              <td>Power Platform, AL extensions</td>
+            </tr>
+            <tr>
+              <th scope="row">Localisation / tax coverage</th>
+              <td>Broadest, vendor-maintained</td>
+              <td>Community packs, variable</td>
+              <td>150+ countries via Microsoft</td>
+            </tr>
+            <tr>
+              <th scope="row">Integration surface</th>
+              <td>OData / REST, BI Publisher, FBDI</td>
+              <td>XML-RPC, REST, webhooks</td>
+              <td>OData, dataflows, dual-write</td>
+            </tr>
+            <tr>
+              <th scope="row">Total cost profile</th>
+              <td>Highest licence, lowest custom build</td>
+              <td>Lowest licence, highest owned effort</td>
+              <td>Middle ground, strong bundle value</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCREENS ============ -->
+<section class="p-section" id="screens">
+  <div class="wrap wrap-wide">
+    <div class="section-head section-head--center">
+      <div class="overline reveal">Product screens</div>
+      <h2 class="reveal" style="--d:.05s">The screens the business actually runs on</h2>
+      <p class="lede reveal" style="--d:.1s">Select any screen to view it full size. Every view below is representative of the interface delivered in production.</p>
+    </div>
+
+    <div class="gallery gallery--3">
+      <button class="shot reveal" type="button" data-shot data-title="Finance command center" data-sub="KPIs, close progress and GL trend">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/finance</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Finance Command Center</h6><p>Period 10 · FY2026 · 4 entities</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">Checklist</span><span class="m-btn">Post period</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Cash position</span><b>$31.2M</b><em>▲ 4.1%</em></div>
+              <div class="m-kpi"><span>DSO</span><b>41d</b><em class="down">▼ 3d</em></div>
+              <div class="m-kpi"><span>Close progress</span><b>78%</b><em>▲ 22%</em></div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Revenue vs plan</b><span>Rolling 12 months</span></div>
+              <svg class="m-line" viewBox="0 0 300 96" preserveAspectRatio="none" aria-hidden="true">
+                <g class="grid"><line x1="0" y1="24" x2="300" y2="24"/><line x1="0" y1="48" x2="300" y2="48"/><line x1="0" y1="72" x2="300" y2="72"/><line x1="0" y1="95" x2="300" y2="95"/></g>
+                <path class="area" d="M0,72 L25,68 L50,70 L75,60 L100,58 L125,52 L150,54 L175,44 L200,40 L225,36 L250,30 L275,26 L300,20 L300,96 L0,96 Z"/>
+                <path class="stroke" d="M0,72 L25,68 L50,70 L75,60 L100,58 L125,52 L150,54 L175,44 L200,40 L225,36 L250,30 L275,26 L300,20"/>
+                <circle class="pt" cx="300" cy="20" r="3.6"/>
+              </svg>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Close checklist</b><span>14 of 18 tasks</span></div>
+              <div class="m-prog">
+                <div class="m-prog__i"><span>Sub-ledger close <em>Done</em></span><i><b style="--w:100%"></b></i></div>
+                <div class="m-prog__i"><span>Intercompany elimination <em>Done</em></span><i><b style="--w:100%"></b></i></div>
+                <div class="m-prog__i"><span>FX revaluation <em>In review</em></span><i><b style="--w:72%"></b></i></div>
+                <div class="m-prog__i"><span>Board pack export <em>Queued</em></span><i><b style="--w:34%"></b></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Finance command center</b><span>KPIs, close progress and GL trend</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+
+      <button class="shot reveal" type="button" data-shot data-title="Procurement &amp; vendor scorecard" data-sub="Spend, on-time delivery and contract compliance">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/procurement/vendors</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Vendor Scorecard</h6><p>142 active suppliers · FY2026</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">Export</span><span class="m-btn">New PO</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Open POs</span><b>412</b><em class="down">▼ 8%</em></div>
+              <div class="m-kpi"><span>Spend YTD</span><b>$86.4M</b><em>▲ 3.2%</em></div>
+              <div class="m-kpi"><span>On-contract</span><b>91%</b><em>▲ 5%</em></div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Supplier performance</b><span>Top by spend</span></div>
+              <div class="m-table">
+                <div class="th" style="grid-template-columns:1.5fr 1fr .8fr .8fr"><span>Supplier</span><span>Category</span><span>OTD</span><span>Rating</span></div>
+                <div class="tr" style="grid-template-columns:1.5fr 1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Kestrel Steel Ltd</span><span class="cell muted">Raw material</span><span class="cell muted">97%</span><span class="cell"><i class="pill">A</i></span></div>
+                <div class="tr" style="grid-template-columns:1.5fr 1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Meridian Polymers</span><span class="cell muted">Raw material</span><span class="cell muted">94%</span><span class="cell"><i class="pill">A</i></span></div>
+                <div class="tr" style="grid-template-columns:1.5fr 1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Blue Harbour Freight</span><span class="cell muted">Logistics</span><span class="cell muted">88%</span><span class="cell"><i class="pill info">B</i></span></div>
+                <div class="tr" style="grid-template-columns:1.5fr 1fr .8fr .8fr"><span class="cell"><i class="dot-av"></i> Vantage MRO Supply</span><span class="cell muted">Indirect</span><span class="cell muted">71%</span><span class="cell"><i class="pill warn">Review</i></span></div>
+              </div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Contract compliance</b><span>By category</span></div>
+              <div class="m-prog">
+                <div class="m-prog__i"><span>Raw materials <em>94%</em></span><i><b style="--w:94%"></b></i></div>
+                <div class="m-prog__i"><span>Logistics <em>86%</em></span><i><b style="--w:86%"></b></i></div>
+                <div class="m-prog__i"><span>Indirect spend <em>62%</em></span><i><b style="--w:62%"></b></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Procurement &amp; vendor scorecard</b><span>Spend, on-time delivery and contract compliance</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+
+      <button class="shot reveal" type="button" data-shot data-title="Inventory &amp; warehouse" data-sub="Fill rate, utilisation and bin-level positions">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/inventory</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Inventory &amp; Warehouse</h6><p>4 sites · 18,412 SKUs</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">Cycle count</span><span class="m-btn">Replenish</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Stock value</span><b>$42.7M</b><em>▲ 1.4%</em></div>
+              <div class="m-kpi"><span>Fill rate</span><b>96.8%</b><em>▲ 2.4%</em></div>
+              <div class="m-kpi"><span>Turns</span><b>7.8x</b><em>▲ 0.6</em></div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Space utilisation</b><span>By site</span></div>
+              <div class="m-prog">
+                <div class="m-prog__i"><span>Main plant · Zone A <em>92%</em></span><i><b style="--w:92%"></b></i></div>
+                <div class="m-prog__i"><span>Main plant · Zone B <em>74%</em></span><i><b style="--w:74%"></b></i></div>
+                <div class="m-prog__i"><span>Northline DC <em>81%</em></span><i><b style="--w:81%"></b></i></div>
+                <div class="m-prog__i"><span>Harbor overflow <em>38%</em></span><i><b style="--w:38%"></b></i></div>
+              </div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Stock exceptions</b><span>24 open</span></div>
+              <div class="m-table">
+                <div class="th" style="grid-template-columns:1.4fr 1fr .9fr .9fr"><span>Item</span><span>Site</span><span>On hand</span><span>Flag</span></div>
+                <div class="tr" style="grid-template-columns:1.4fr 1fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> RM-4420 Coil</span><span class="cell muted">Main plant</span><span class="cell muted">1,240</span><span class="cell"><i class="pill">OK</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr 1fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> FG-1180 Bracket</span><span class="cell muted">Northline DC</span><span class="cell muted">86</span><span class="cell"><i class="pill warn">Below min</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr 1fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> RM-9003 Resin</span><span class="cell muted">Main plant</span><span class="cell muted">0</span><span class="cell"><i class="pill bad">Stockout</i></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Inventory &amp; warehouse</b><span>Fill rate, utilisation and bin-level positions</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+
+      <button class="shot reveal" type="button" data-shot data-title="Production planning" data-sub="MRP horizon, capacity load and work orders">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/manufacturing/plan</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Production Planning</h6><p>MRP run 04 · horizon 90 days</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">Reschedule</span><span class="m-btn">Run MRP</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Capacity load</span><b>87%</b><em>▲ 4%</em></div>
+              <div class="m-kpi"><span>Open orders</span><b>164</b><em>▲ 12</em></div>
+              <div class="m-kpi"><span>Late jobs</span><b>3</b><em class="down">▼ 9</em></div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Line schedule</b><span>Weeks 41–52</span></div>
+              <div class="m-gantt">
+                <div class="m-gi"><span>Line 1 · Cut</span><i><b style="--s:2%;--w:38%"></b></i></div>
+                <div class="m-gi"><span>Line 1 · Form</span><i><b style="--s:34%;--w:32%"></b></i></div>
+                <div class="m-gi"><span>Line 2 · Weld</span><i><b style="--s:8%;--w:46%"></b></i></div>
+                <div class="m-gi"><span>Line 2 · Paint</span><i><b style="--s:52%;--w:30%"></b></i></div>
+                <div class="m-gi"><span>Line 3 · Assembly</span><i><b style="--s:24%;--w:54%"></b></i></div>
+                <div class="m-gi"><span>QA &amp; pack</span><i><b style="--s:72%;--w:24%"></b></i></div>
+              </div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Capacity by work centre</b><span>This week</span></div>
+              <div class="m-bars">
+                <span class="b"><i style="--h:92%"></i><span>CNC</span></span><span class="b"><i style="--h:78%"></i><span>Weld</span></span><span class="b"><i style="--h:66%"></i><span>Paint</span></span><span class="b"><i style="--h:84%"></i><span>Assy</span></span><span class="b"><i style="--h:52%"></i><span>Pack</span></span><span class="b"><i style="--h:44%"></i><span>QA</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Production planning</b><span>MRP horizon, capacity load and work orders</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+
+      <button class="shot reveal" type="button" data-shot data-title="Consolidation &amp; reporting" data-sub="Group position, eliminations and entity mix">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/consolidation</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Group Consolidation</h6><p>Q3 2026 · 4 legal entities</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">PDF</span><span class="m-btn">Publish</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Group revenue</span><b>$248.6M</b><em>▲ 6.4%</em></div>
+              <div class="m-kpi"><span>Eliminations</span><b>$7.1M</b><em>reconciled</em></div>
+              <div class="m-kpi"><span>FX impact</span><b>-$0.4M</b><em class="down">▼ 0.3%</em></div>
+            </div>
+            <div class="m-row-2 m-row-2--even">
+              <div class="m-panel">
+                <div class="m-panel__h"><b>Revenue by entity</b><span>Q3</span></div>
+                <div class="m-donut-row">
+                  <div class="m-donut" style="--p:46%"><b>46%</b></div>
+                  <div class="m-legend">
+                    <div><i></i> Atlas Manufacturing · 46%</div>
+                    <div><i></i> Northline Distribution · 31%</div>
+                    <div><i></i> Delta &amp; Harbor · 23%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-panel">
+                <div class="m-panel__h"><b>Close by entity</b><span>Day 3</span></div>
+                <div class="m-list">
+                  <div class="m-li"><span class="m-li__ic"><i></i></span><span class="m-li__tx"><b>Atlas Manufacturing</b><span>Ledger closed · signed off</span></span><span class="m-li__val" style="color:#0f9d58">Closed</span></div>
+                  <div class="m-li"><span class="m-li__ic"><i></i></span><span class="m-li__tx"><b>Northline Distribution</b><span>Intercompany pending</span></span><span class="m-li__val" style="color:#b45309">Day 3</span></div>
+                  <div class="m-li"><span class="m-li__ic"><i></i></span><span class="m-li__tx"><b>Delta Components</b><span>Revaluation running</span></span><span class="m-li__val" style="color:#b45309">Day 3</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Consolidation &amp; reporting</b><span>Group position, eliminations and entity mix</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+
+      <button class="shot reveal" type="button" data-shot data-title="Data migration control room" data-sub="Object loads, control totals and sign-off status">
+        <div class="mock">
+          <div class="mock__bar"><span class="mock__dots"><i></i><i></i><i></i></span><span class="mock__url">erp.corporatesolutions.io/migration/control-room</span></div>
+          <div class="mock__main">
+            <div class="m-top"><div><h6>Data Migration Control Room</h6><p>Mock load 3 · wave 1 entities</p></div><div class="m-top__acts"><span class="m-btn m-btn--ghost">Logs</span><span class="m-btn">Reconcile</span></div></div>
+            <div class="m-kpis m-kpis--3">
+              <div class="m-kpi"><span>Objects loaded</span><b>31/34</b><em>▲ 6</em></div>
+              <div class="m-kpi"><span>Control variance</span><b>0.00%</b><em>balanced</em></div>
+              <div class="m-kpi"><span>Rejected rows</span><b>18</b><em class="down">▼ 62%</em></div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Load status</b><span>Updated 4m ago</span></div>
+              <div class="m-table">
+                <div class="th" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span>Data object</span><span>Rows</span><span>Variance</span><span>Status</span></div>
+                <div class="tr" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> Customer master</span><span class="cell muted">8,412</span><span class="cell muted">0.00</span><span class="cell"><i class="pill">Signed off</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> Item master</span><span class="cell muted">18,412</span><span class="cell muted">0.00</span><span class="cell"><i class="pill">Signed off</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> Open purchase orders</span><span class="cell muted">412</span><span class="cell muted">0.00</span><span class="cell"><i class="pill info">In review</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> GL opening balances</span><span class="cell muted">62,180</span><span class="cell muted">0.00</span><span class="cell"><i class="pill warn">Loading</i></span></div>
+                <div class="tr" style="grid-template-columns:1.4fr .9fr .9fr .9fr"><span class="cell"><i class="dot-av"></i> Fixed assets</span><span class="cell muted">3,276</span><span class="cell muted">0.00</span><span class="cell"><i class="pill bad">Blocked</i></span></div>
+              </div>
+            </div>
+            <div class="m-panel">
+              <div class="m-panel__h"><b>Migration progress</b><span>Wave 1</span></div>
+              <div class="m-prog">
+                <div class="m-prog__i"><span>Master data <em>100%</em></span><i><b style="--w:100%"></b></i></div>
+                <div class="m-prog__i"><span>Transactional open items <em>88%</em></span><i><b style="--w:88%"></b></i></div>
+                <div class="m-prog__i"><span>Historical postings <em>74%</em></span><i><b style="--w:74%"></b></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shot__cap"><span><b>Data migration control room</b><span>Object loads, control totals and sign-off status</span></span><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGY ============ -->
+<section class="p-section p-section--alt" id="technology">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="overline reveal">Technology</div>
+        <h2 class="reveal" style="--d:.05s">Boring where it must be, modern where it pays</h2>
+        <p class="lede reveal mt-16" style="--d:.1s">
+          ERP outlives the team that installs it, so the stack favours technologies with a
+          large hiring pool, a published upgrade path and no single-vendor dead ends.
+          Everything sits behind an integration layer we control.
+        </p>
+        <div class="note reveal mt-24" style="--d:.15s">
+          <b>Non-negotiables:</b> no customisation on the upgrade path without a documented
+          owner, point-in-time recovery for every ledger, and an exit plan for each SaaS
+          dependency written before signature.
+        </div>
+      </div>
+
+      <div class="tech-row reveal" style="--d:.1s">
+        <div class="tech-group">
+          <div class="tech-group__label">Platform</div>
+          <div class="tech-chips">
+            <span class="tchip"><span class="tchip__logo">OF</span>Oracle Fusion Cloud</span>
+            <span class="tchip"><span class="tchip__logo">EB</span>Oracle EBS</span>
+            <span class="tchip"><span class="tchip__logo">NS</span>NetSuite</span>
+            <span class="tchip"><span class="tchip__logo">D3</span>Microsoft Dynamics 365</span>
+            <span class="tchip"><span class="tchip__logo">OD</span>Odoo 17</span>
+            <span class="tchip"><span class="tchip__logo">EP</span>ERPNext</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <div class="tech-group__label">Data &amp; integration</div>
+          <div class="tech-chips">
+            <span class="tchip"><span class="tchip__logo">PG</span>PostgreSQL</span>
+            <span class="tchip"><span class="tchip__logo">MS</span>SQL Server</span>
+            <span class="tchip"><span class="tchip__logo">AP</span>OData / REST</span>
+            <span class="tchip"><span class="tchip__logo">KA</span>Apache Kafka</span>
+            <span class="tchip"><span class="tchip__logo">BO</span>Boomi</span>
+            <span class="tchip"><span class="tchip__logo">SF</span>SFTP</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <div class="tech-group__label">Frontend &amp; reporting</div>
+          <div class="tech-chips">
+            <span class="tchip"><span class="tchip__logo">Re</span>React</span>
+            <span class="tchip"><span class="tchip__logo">BI</span>Power BI</span>
+            <span class="tchip"><span class="tchip__logo">SS</span>SSRS</span>
+            <span class="tchip"><span class="tchip__logo">XL</span>Excel add-ins</span>
+            <span class="tchip"><span class="tchip__logo">AN</span>Angular</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <div class="tech-group__label">Platform &amp; delivery</div>
+          <div class="tech-chips">
+            <span class="tchip"><span class="tchip__logo">DK</span>Docker</span>
+            <span class="tchip"><span class="tchip__logo">K8</span>Kubernetes</span>
+            <span class="tchip"><span class="tchip__logo">AZ</span>Azure</span>
+            <span class="tchip"><span class="tchip__logo">TF</span>Terraform</span>
+            <span class="tchip"><span class="tchip__logo">GH</span>GitHub Actions</span>
+            <span class="tchip"><span class="tchip__logo">SQ</span>SonarQube</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE ============ -->
+<section class="p-section" id="architecture">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="overline reveal">Architecture</div>
+      <h2 class="reveal" style="--d:.05s">A governed core with one integration seam</h2>
+      <p class="lede reveal" style="--d:.1s">Every channel talks to the iPaaS layer, never to the ERP directly — so swapping a platform track does not rebuild the estate around it.</p>
+    </div>
+
+    <div class="arch reveal" style="--d:.14s">
+      <svg viewBox="0 0 940 400" role="img" aria-label="ERP reference architecture diagram">
+        <defs>
+          <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+            <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#ea580c"/>
+          </marker>
+          <linearGradient id="gTop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ea580c"/><stop offset="100%" stop-color="#f97316"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Experience -->
+        <text x="14" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" letter-spacing="1.6" fill="#9a3412">EXPERIENCE</text>
+
+        <rect x="14" y="34" width="196" height="54" rx="11" fill="#fff7ed" stroke="#fed7aa"/>
+        <text x="112" y="58" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7c2d12">ERP web client</text>
+        <text x="112" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">React · finance &amp; operations</text>
+
+        <rect x="14" y="96" width="196" height="54" rx="11" fill="#fff7ed" stroke="#fed7aa"/>
+        <text x="112" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7c2d12">Power BI</text>
+        <text x="112" y="138" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">Board &amp; management reports</text>
+
+        <rect x="14" y="158" width="196" height="54" rx="11" fill="#fff7ed" stroke="#fed7aa"/>
+        <text x="112" y="182" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7c2d12">Partner portal</text>
+        <text x="112" y="200" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">Suppliers &amp; customers</text>
+
+        <rect x="14" y="220" width="196" height="54" rx="11" fill="#fff7ed" stroke="#fed7aa"/>
+        <text x="112" y="244" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7c2d12">Mobile approvals</text>
+        <text x="112" y="262" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">Field sign-off · offline queue</text>
+
+        <line x1="212" y1="61" x2="242" y2="61" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="212" y1="123" x2="242" y2="123" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="212" y1="185" x2="242" y2="185" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="212" y1="247" x2="242" y2="247" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+
+        <!-- Integration layer -->
+        <rect x="244" y="34" width="96" height="240" rx="14" fill="url(#gTop)" opacity=".97"/>
+        <text transform="rotate(-90 291 154)" x="291" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Integration layer (iPaaS)</text>
+        <text transform="rotate(-90 304 154)" x="304" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ffedd5">OData · REST · Kafka · SFTP</text>
+
+        <line x1="342" y1="154" x2="388" y2="67" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="342" y1="154" x2="388" y2="145" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="342" y1="154" x2="388" y2="223" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+
+        <!-- ERP core -->
+        <rect x="390" y="34" width="186" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="483" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">Finance &amp; controlling</text>
+        <text x="483" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">GL · AP · AR · fixed assets</text>
+
+        <rect x="390" y="112" width="186" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="483" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">Supply chain &amp; manufacturing</text>
+        <text x="483" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">WMS · MRP · MES feedback</text>
+
+        <rect x="390" y="190" width="186" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="483" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">People &amp; payroll</text>
+        <text x="483" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">HR · time · payroll interface</text>
+
+        <line x1="578" y1="67" x2="618" y2="67" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="578" y1="145" x2="618" y2="145" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="578" y1="223" x2="618" y2="223" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+
+        <!-- Event bus / CDC -->
+        <rect x="620" y="34" width="120" height="240" rx="14" fill="#0f172a"/>
+        <text x="680" y="146" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Event bus / CDC</text>
+        <text x="680" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#fdba74">Kafka · Debezium</text>
+        <text x="680" y="186" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#fdba74">outbox pattern</text>
+
+        <line x1="742" y1="67" x2="782" y2="67" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="742" y1="145" x2="782" y2="145" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="742" y1="223" x2="782" y2="223" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+
+        <!-- Data -->
+        <rect x="784" y="34" width="142" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="855" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">Primary DB</text>
+        <text x="855" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">Transactional record</text>
+
+        <rect x="784" y="112" width="142" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="855" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">Data warehouse</text>
+        <text x="855" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">Conformed model</text>
+
+        <rect x="784" y="190" width="142" height="66" rx="12" fill="#fff" stroke="#fed7aa"/>
+        <text x="855" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1f2937">Archive &amp; audit</text>
+        <text x="855" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#ea580c">7-year retention</text>
+
+        <!-- Platform strip -->
+        <rect x="14" y="310" width="912" height="74" rx="14" fill="#fff7ed" stroke="#fed7aa"/>
+        <text x="470" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7c2d12">Platform layer</text>
+        <text x="470" y="366" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#ea580c">Docker · Kubernetes · Azure · Terraform · GitHub Actions · SonarQube · nightly PITR backups</text>
+
+        <line x1="112" y1="276" x2="112" y2="308" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="483" y1="258" x2="483" y2="308" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="680" y1="276" x2="680" y2="308" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+        <line x1="855" y1="258" x2="855" y2="308" stroke="#ea580c" stroke-width="2" marker-end="url(#ar)"/>
+      </svg>
+
+      <div class="arch-legend">
+        <span><i style="background:#ea580c"></i> Request / event flow</span>
+        <span><i style="background:#0f172a;border:1px solid #ea580c"></i> Async messaging · event bus</span>
+        <span><i style="background:#fff7ed;border:1px solid #ea580c"></i> Shared platform services</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="p-section p-section--alt" id="results">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <div class="overline reveal">Outcomes</div>
+      <h2 class="reveal" style="--d:.05s">Measured two quarters after the last wave</h2>
+    </div>
+
+    <div class="outcomes" data-stagger=".07">
+      <div class="outcome reveal">
+        <span class="outcome__ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <b><span data-count="38" data-prefix="-" data-suffix="%">0</span></b>
+        <span>Month-end close time</span>
+      </div>
+      <div class="outcome reveal">
+        <span class="outcome__ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></span>
+        <b><span data-count="4">0</span></b>
+        <span>Business units live on one ERP</span>
+      </div>
+      <div class="outcome reveal">
+        <span class="outcome__ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5 11 15l4.5-5"/></svg></span>
+        <b><span data-count="0">0</span></b>
+        <span>Failed postings at cutover</span>
+      </div>
+      <div class="outcome reveal">
+        <span class="outcome__ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+        <b><span data-count="96" data-suffix="%">0</span></b>
+        <span>User adoption within 60 days</span>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt-56">
+      <blockquote class="pull-quote reveal">
+        <p>“We used to spend eleven days closing and another week arguing about whose number was right. Now the group closes in under seven days and the argument is over — there is one ledger, and it is the one everyone is looking at.”</p>
+        <footer><b>Helena Vogt</b>Group CFO · Atlas Manufacturing &amp; Distribution</footer>
+      </blockquote>
+
+      <div class="card reveal" style="--d:.08s">
+        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h4>What we handed over</h4>
+        <ul class="check-list mt-16">
+          <li>Configuration workbook, extension source code and infrastructure-as-code</li>
+          <li>Cutover runbooks, rollback plans and control-total reconciliation sheets</li>
+          <li>Fit-gap log, design authority decisions and integration contracts</li>
+          <li>Four-day key-user enablement with recorded sessions and quick-reference guides</li>
+          <li>Managed hypercare with a 4-hour P1 response SLA and quarterly release plan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELATED ============ -->
+<section class="p-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="overline reveal">Related work</div>
+      <h2 class="reveal" style="--d:.05s">Explore more projects</h2>
+    </div>
+
+    <div class="related" data-stagger=".07">
+      <a class="rlink reveal" href="hr-system.html" style="--accent:#7c3aed;--accent-soft:rgba(124,58,237,.10);--accent-line:rgba(124,58,237,.3)">
+        <span class="rlink__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+        <h4>HR Management System</h4>
+        <p>Core HR, payroll, attendance, recruitment and performance for 4,800+ employees in 12 countries.</p>
+        <span class="link-arrow">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="rlink reveal" href="hospital-management-system.html" style="--accent:#0d9488;--accent-soft:rgba(13,148,136,.10);--accent-line:rgba(13,148,136,.3)">
+        <span class="rlink__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v4M14 8h-4"/><path d="M2 12h3l2-5 3 10 2-6 2 3h5"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg></span>
+        <h4>Hospital Management System</h4>
+        <p>EMR, OPD/IPD, laboratory, pharmacy, billing and insurance in one clinical platform.</p>
+        <span class="link-arrow">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="rlink reveal" href="server-network-monitoring.html" style="--accent:#2563eb;--accent-soft:rgba(37,99,235,.10);--accent-line:rgba(37,99,235,.3)">
+        <span class="rlink__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg></span>
+        <h4>Server &amp; Network Monitoring</h4>
+        <p>Topology discovery, metrics, flow analysis and escalation-aware alerting for the whole estate.</p>
+        <span class="link-arrow">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="p-cta" id="contact">
+  <div class="wrap">
+    <div class="cta-band reveal-scale">
+      <div class="cta-band__grid">
+        <div>
+          <span class="eyebrow">Next step</span>
+          <h2>Planning an ERP rollout of your own?</h2>
+          <p>We will run a half-day discovery workshop with your finance, supply chain and IT leads and hand back a platform recommendation with a scoped delivery plan — whether or not you build it with us.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn--primary btn--lg" href="mailto:hello@corporatesolutions.io">Book a discovery workshop
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--light btn--lg" href="../index.html#work">See all projects</a>
+          </div>
+        </div>
+        <div class="cta-band__meta">
+          <div class="cta-band__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span><b>1 business day</b><span>Typical response time</span></span>
+          </div>
+          <div class="cta-band__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span><b>NDA first</b><span>Mutual NDA before discovery</span></span>
+          </div>
+          <div class="cta-band__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+            <span><b>Delivery plan</b><span>Scope, effort and risks in writing</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand brand--plate" href="../index.html">
+          <img class="brand__logo" src="../assets/img/logo.png" alt="Corporate Solutions" width="640" height="202" decoding="async">
+        </a>
+        <p>We plan, build and operate the software that runs healthcare, manufacturing, finance and public services — with the engineering rigour those sectors demand.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.6 8.65 22 11 22 14.4V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.5-2.26 3.1V21H9z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.3 8.3L23 22h-6.6l-5.2-6.7L5.3 22H2l7.8-8.9L1.6 2h6.7l4.7 6.2L18.9 2Zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20Z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.43-5.02a2.6 2.6 0 0 0-1.83-1.84C19.13 4.7 12 4.7 12 4.7s-7.13 0-8.74.44A2.6 2.6 0 0 0 1.43 7C1 8.6 1 12 1 12s0 3.4.43 5.02c.24.9.94 1.6 1.83 1.84 1.61.44 8.74.44 8.74.44s7.13 0 8.74-.44a2.6 2.6 0 0 0 1.83-1.84C23 15.4 23 12 23 12ZM9.75 15.3V8.7L15.5 12l-5.75 3.3Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="hr-system.html">HR Management System</a></li>
+          <li><a href="hospital-management-system.html">Hospital Management</a></li>
+          <li><a href="erp-implementation.html">ERP Implementation</a></li>
+          <li><a href="server-network-monitoring.html">Server &amp; Network Monitoring</a></li>
+          <li><a href="live-conference-solutions.html">Live Conference Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#services">Capabilities</a></li>
+          <li><a href="../index.html#process">Delivery process</a></li>
+          <li><a href="../index.html#technologies">Technology stack</a></li>
+          <li><a href="../index.html#testimonials">Client results</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Get in touch</h4>
+        <ul class="footer__contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><span><b>hello@corporatesolutions.io</b><span>Commercial &amp; partnerships</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span><b>+92 334 3494495</b><span>WhatsApp &middot; Mon–Fri · 08:00–18:00</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Delivery hubs</b><span>Dubai · Cairo · Warsaw · Berlin · London · Toronto</span></span></li>
+        </ul>
+        <div class="newsletter">
+          <form data-demo-form novalidate>
+            <input type="email" required placeholder="Work email" aria-label="Work email">
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter__note">Monthly engineering notes. No spam, unsubscribe anytime.</p>
+          <p class="newsletter__msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span data-year>2026</span> Corporate Solutions. All rights reserved.</span>
+      <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+      <div class="footer__badges">
+        <span>ISO 27001 aligned</span><span>SOC 2 practices</span><span>GDPR ready</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/project.js"></script>
+</body>
+</html>
